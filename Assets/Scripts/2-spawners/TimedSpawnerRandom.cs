@@ -15,7 +15,7 @@ public class TimedSpawnerRandom : MonoBehaviour
     [SerializeField] float maxTimeBetweenSpawns = 1.0f;
     [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")]
     [SerializeField] float maxXDistance = 1.5f;
-    private int prefabTypes = 5;
+    private int prefabTypes = 4;
     private int initialCount = 0;
     void Start()
     {

@@ -6,19 +6,22 @@ using UnityEngine;
  * This component destroys its object whenever it triggers a 2D collider with the given tag.
  */
 public class DestroyOnTrigger2D : MonoBehaviour {
-    [Tooltip("Every object tagged with this tag will trigger the destruction of this object")]
     [SerializeField] string triggeringTag;
-
     [SerializeField] int HitPoints;
+    [Tooltip("Every enemy hitting will decrease this field")]
+    [SerializeField] NumberField HealthField; 
 
+    private void Start()
+    {
+        HealthField.SetNumber(HitPoints);
+    }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == triggeringTag && enabled) {
             Destroy(other.gameObject);
             --HitPoints;
-            Debug.Log("Your Health is : " + HitPoints);
+            HealthField.SetNumber(HitPoints);
             if(HitPoints == 0)
             {
-                Debug.Log("You are dead!");
                 Destroy(this.gameObject);
             }
         }
