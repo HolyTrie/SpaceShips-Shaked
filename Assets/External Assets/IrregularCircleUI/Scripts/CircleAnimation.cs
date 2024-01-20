@@ -1,11 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 public class CircleAnimation : MonoBehaviour
 {
 	[SerializeField] GameObject[] animObjects;
-	// Update is called once per frame
 	private float angle_curve = 50f;
 	void Update()
 	{
