@@ -177,4 +177,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggeringTag: Enemy
   scoreField: {fileID: 0}
-  pointsToAdd: 5
+  NormalEnemyPoints: 5
+  BossPoints: 15
+  BossLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  NormalEnemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
