@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 161565205515695559, guid: 5e35cddd1af408d4f95e39af9996d092,
         type: 3}
       propertyPath: m_Name
-      value: ship1
+      value: shipplayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

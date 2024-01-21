@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7448415278356427398}
   - component: {fileID: 5021408607770121273}
   - component: {fileID: 2720793798657533815}
-  - component: {fileID: 6629950538378841222}
   - component: {fileID: 725429914409683523}
   - component: {fileID: 3143261107375193499}
   m_Layer: 6
@@ -127,19 +126,6 @@ MonoBehaviour:
   triggeringTag: Laser
   HitPoints: 2
   HealthField: {fileID: 1050473890292388916}
---- !u!114 &6629950538378841222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522754605184584039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc6f67fbb0751a4d92512ea05cbdf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: -4, z: 0}
 --- !u!50 &725429914409683523
 Rigidbody2D:
   serializedVersion: 4

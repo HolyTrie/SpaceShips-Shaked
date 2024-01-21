@@ -18,7 +18,8 @@ public class DestroyOnTrigger2D : MonoBehaviour
     {
         if (other.tag == triggeringTag && enabled)
         {
-            Destroy(other.gameObject);
+            if(tag != "Player") // fix this later..
+                Destroy(other.gameObject);
             --HitPoints;
             HealthField.SetNumber(HitPoints);
             if (HitPoints == 0)
