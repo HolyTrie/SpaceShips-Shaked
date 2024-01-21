@@ -15,7 +15,6 @@ public class TimedSpawnerRandom : MonoBehaviour
     [SerializeField] float maxTimeBetweenSpawns = 1.0f;
     [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")]
     [SerializeField] float maxXDistance = 1.5f;
-    private int prefabTypes = 4;
     private int initialCount = 0;
     void Start()
     {
@@ -31,7 +30,7 @@ public class TimedSpawnerRandom : MonoBehaviour
                 transform.position.x + Random.Range(-maxXDistance, +maxXDistance),
                 transform.position.y,
                 transform.position.z);
-            GameObject newObject = Instantiate(prefabToSpawn[Random.Range(initialCount, prefabTypes)], positionOfSpawnedObject, Quaternion.identity);
+            GameObject newObject = Instantiate(prefabToSpawn[Random.Range(initialCount, prefabToSpawn.Length)], positionOfSpawnedObject, Quaternion.identity);
             newObject.GetComponent<Mover>().SetVelocity(velocityOfSpawnedObject);
         }
     }

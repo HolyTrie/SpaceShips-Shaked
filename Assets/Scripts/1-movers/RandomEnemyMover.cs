@@ -9,12 +9,12 @@ public class RandomEnemyMover : MonoBehaviour
     [SerializeField] float max_y;
     [SerializeField] float min_y;
     [SerializeField] float speed;
+    [SerializeField] float width;
+    [SerializeField] float height;
     private float x_movement;
     private float y_movement;
     private bool movingRight = true;
     private bool movingDown = true;
-    public float width = 10f;
-    public float height = 5f;
 
     void Update()
     {
@@ -23,27 +23,27 @@ public class RandomEnemyMover : MonoBehaviour
         if (movingRight)
         {
             // Debug.Log(ToStrin)
-            transform.position += new Vector3(Mathf.Lerp(0,x_movement* speed * Time.deltaTime,10f), 0, 0);
+            transform.position += new Vector3(Mathf.Lerp(0, x_movement * speed * Time.deltaTime, 10f), 0, 0);
         }
         else
         {
-            transform.position += new Vector3(Mathf.Lerp(0,-x_movement* speed * Time.deltaTime,10f), 0, 0);
+            transform.position += new Vector3(Mathf.Lerp(0, -x_movement * speed * Time.deltaTime, 10f), 0, 0);
         }
         if (movingDown)
         {
-            transform.position += new Vector3(0, Mathf.Lerp(0,-y_movement* speed * Time.deltaTime,10f), 0);
+            transform.position += new Vector3(0, Mathf.Lerp(0, -y_movement * speed * Time.deltaTime, 10f), 0);
         }
         else
-        {   
-            Mathf.Lerp(0,-x_movement* speed * Time.deltaTime,0);
-            transform.position += new Vector3(0, Mathf.Lerp(0,y_movement* speed * Time.deltaTime,10f), 0) ;
+        {
+            Mathf.Lerp(0, -x_movement * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, Mathf.Lerp(0, y_movement * speed * Time.deltaTime, 10f), 0);
         }
 
         // Check if the formation is going outside the playspace...
-        float rightEdgeOfFormation = transform.position.x + (0.5f * width) * Time.deltaTime ;
+        float rightEdgeOfFormation = transform.position.x + (0.5f * width) * Time.deltaTime;
         float leftEdgeOfFormation = transform.position.x - (0.5f * width) * Time.deltaTime;
-        float topEdgeOfFormation = transform.position.y + (0.5f * height)* Time.deltaTime;
-        float bottomEdgeOfFormation = transform.position.y - (0.5f * height)* Time.deltaTime;
+        float topEdgeOfFormation = transform.position.y + (0.5f * height) * Time.deltaTime;
+        float bottomEdgeOfFormation = transform.position.y - (0.5f * height) * Time.deltaTime;
         if (leftEdgeOfFormation < min_x || rightEdgeOfFormation > max_x)
         {
             movingRight = !movingRight;
@@ -52,11 +52,5 @@ public class RandomEnemyMover : MonoBehaviour
         {
             movingDown = !movingDown;
         }
-
-        // transform.position += new Vector3(x_movement, 0, 0) * Time.deltaTime;
-        // if(x_movement < 0)
-        //     transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        // else
-        //     transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 }
