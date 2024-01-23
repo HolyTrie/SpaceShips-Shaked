@@ -8,7 +8,7 @@ you can pick shields that are spawned to be invulnerable for one hit. </br>
 
 Key Bindings - </br>
 * Space - fire
-* W, A - Movement.
+* Arrows - Movement.
 
 You can try the game on [Itch.io-SpaceShips](https://shaggyx98.itch.io/spaceships)
 
