@@ -12,7 +12,7 @@ Key Bindings - </br>
 
 You can try the game on [Itch.io-SpaceShips](https://shaggyx98.itch.io/spaceships)
 
-# Changes
+## Changes
 
 In my code i added few changes, i'll list them below:
 * created random movement for enemies [EnemyRandomMover](https://github.com/HolyTrie/SpaceShips-Shaked/blob/main/Assets/Scripts/1-movers/RandomEnemyMover.cs)
