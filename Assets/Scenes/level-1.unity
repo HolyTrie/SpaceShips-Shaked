@@ -359,7 +359,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.4801908
+  orthographic size: 9.083634
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -532,6 +532,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1028405852751244, guid: f78f1278a61ae47a4ab157aa1103e738,
         type: 3}
+    - target: {fileID: 1897864281271942729, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: maxTimeBetweenSpawns
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897864281271942729, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: minTimeBetweenSpawns
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897864281271942729, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: velocityOfSpawnedObject.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897864281271942774, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3130046138533906448, guid: 4e15a0c5270bc4e3b9057719c8e29756,
         type: 3}
       propertyPath: maxXDistance
@@ -568,6 +588,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arena
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292561109694542976, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: maxXDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292561109694542976, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: velocityOfSpawnedObject.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292561109694543039, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.33
       objectReference: {fileID: 0}
     - target: {fileID: 3764850399859279478, guid: 4e15a0c5270bc4e3b9057719c8e29756,
         type: 3}
@@ -664,6 +699,11 @@ PrefabInstance:
       propertyPath: scoreField
       value: 
       objectReference: {fileID: 1585027738}
+    - target: {fileID: 8005938501463897117, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.47
+      objectReference: {fileID: 0}
     - target: {fileID: 8795455023752330465, guid: 4e15a0c5270bc4e3b9057719c8e29756,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
