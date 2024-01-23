@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4660792983616286404}
   - component: {fileID: 7448415278356427398}
   - component: {fileID: 5021408607770121273}
-  - component: {fileID: 2720793798657533815}
   - component: {fileID: 725429914409683523}
   - component: {fileID: 3143261107375193499}
+  - component: {fileID: 6032340980938944295}
+  - component: {fileID: 4348727635172535059}
   m_Layer: 6
   m_Name: Bird5_LightYello_Boss
   m_TagString: Enemy
@@ -111,21 +112,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2720793798657533815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522754605184584039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeringTag: Laser
-  HitPoints: 2
-  HealthField: {fileID: 1050473890292388916}
 --- !u!50 &725429914409683523
 Rigidbody2D:
   serializedVersion: 4
@@ -300,6 +286,40 @@ PolygonCollider2D:
       - {x: -0.83, y: -1.66}
       - {x: -0.82, y: -1.67}
   m_UseDelaunayMesh: 0
+--- !u!114 &6032340980938944295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522754605184584039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dffaef86b8c754693aee0f344ac1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: Laser
+  HitPoints: 10
+  HealthField: {fileID: 1050473890292388916}
+--- !u!114 &4348727635172535059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522754605184584039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb9e0d2342af4b6ba7ed3cbcb70cf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_x: 4
+  min_x: -4
+  max_y: 0
+  min_y: -1
+  speed: 1
+  width: 4
+  height: 4
 --- !u!1 &2685596464958059237
 GameObject:
   m_ObjectHideFlags: 0

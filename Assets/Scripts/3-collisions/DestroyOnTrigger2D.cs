@@ -6,26 +6,13 @@ using UnityEngine;
  */
 public class DestroyOnTrigger2D : MonoBehaviour
 {
-    [SerializeField] string triggeringTag;
-    [SerializeField] int HitPoints;
-    [Tooltip("Every enemy hitting will decrease this field")]
-    [SerializeField] NumberField HealthField;
-    private void Start()
-    {
-        HealthField.SetNumber(HitPoints);
-    }
+    [SerializeField] string[] triggeringTag;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == triggeringTag && enabled)
-        {
-            if(tag != "Player") // fix this later..
-                Destroy(other.gameObject);
-            --HitPoints;
-            HealthField.SetNumber(HitPoints);
-            if (HitPoints == 0)
+        for(int i = 0; i<triggeringTag.Length; ++ i)
+            if (other.tag == triggeringTag[i] && enabled)
             {
                 Destroy(this.gameObject);
             }
-        }
     }
 }

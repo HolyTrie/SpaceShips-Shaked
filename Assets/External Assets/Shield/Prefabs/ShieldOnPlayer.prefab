@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2366367642739851799}
   m_Layer: 0
   m_Name: ShieldOnPlayer
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,9 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggeringTag: Enemy
-  HitPoints: 1
-  HealthField: {fileID: 8133776305344607364}
+  triggeringTag:
+  - Enemy
 --- !u!1 &1115785535166706
 GameObject:
   m_ObjectHideFlags: 0

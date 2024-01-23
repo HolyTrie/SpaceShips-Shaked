@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class RandomEnemyMover : MonoBehaviour
@@ -18,8 +17,8 @@ public class RandomEnemyMover : MonoBehaviour
 
     void Update()
     {
-        x_movement = UnityEngine.Random.Range(min_x, max_x);
-        y_movement = UnityEngine.Random.Range(min_y, max_y);
+        x_movement = Random.Range(min_x, max_x);
+        y_movement = Random.Range(min_y, max_y);
         if (movingRight)
         {
             // Debug.Log(ToStrin)
@@ -38,7 +37,6 @@ public class RandomEnemyMover : MonoBehaviour
             Mathf.Lerp(0, -x_movement * speed * Time.deltaTime, 0);
             transform.position += new Vector3(0, Mathf.Lerp(0, y_movement * speed * Time.deltaTime, 10f), 0);
         }
-
         // Check if the formation is going outside the playspace...
         float rightEdgeOfFormation = transform.position.x + (0.5f * width) * Time.deltaTime;
         float leftEdgeOfFormation = transform.position.x - (0.5f * width) * Time.deltaTime;

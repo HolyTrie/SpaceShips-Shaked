@@ -124,9 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggeringTag: Laser
-  HitPoints: 1
-  HealthField: {fileID: 432966125949181154}
+  triggeringTag:
+  - Laser
+  - Shield
+  - Player
 --- !u!114 &6784331987184714908
 MonoBehaviour:
   m_ObjectHideFlags: 0

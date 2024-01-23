@@ -651,6 +651,11 @@ PrefabInstance:
       objectReference: {fileID: 1585027738}
     - target: {fileID: 7275917888731124912, guid: 4e15a0c5270bc4e3b9057719c8e29756,
         type: 3}
+      propertyPath: winScore
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275917888731124912, guid: 4e15a0c5270bc4e3b9057719c8e29756,
+        type: 3}
       propertyPath: sceneName
       value: level-2-boss
       objectReference: {fileID: 0}

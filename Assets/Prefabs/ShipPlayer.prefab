@@ -281,9 +281,9 @@ GameObject:
   - component: {fileID: 5775237672949799735}
   - component: {fileID: 8296491038174515846}
   - component: {fileID: 207689232339125961}
-  - component: {fileID: 5621102445374775040}
   - component: {fileID: 7686312235907239635}
   - component: {fileID: 7671626340187621715}
+  - component: {fileID: 7116419727998799213}
   m_Layer: 0
   m_Name: ShipPlayer
   m_TagString: Player
@@ -497,7 +497,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -562,21 +562,6 @@ PolygonCollider2D:
       - {x: 0.17999999, y: -0.76}
       - {x: 0.45, y: -0.76}
   m_UseDelaunayMesh: 0
---- !u!114 &5621102445374775040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4362196164270875476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeringTag: Enemy
-  HitPoints: 3
-  HealthField: {fileID: 7084274863807068730}
 --- !u!114 &7686312235907239635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,6 +608,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3460ad62ce8a39e47a75c13b362f00d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7116419727998799213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4362196164270875476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dffaef86b8c754693aee0f344ac1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: Enemy
+  HitPoints: 3
+  HealthField: {fileID: 7084274863807068730}
 --- !u!1 &6642242310220111923
 GameObject:
   m_ObjectHideFlags: 0
